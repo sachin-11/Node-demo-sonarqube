@@ -1,23 +1,22 @@
-const express = require('express'),
-  app = express(),
-  bodyParser = require('body-parser'),
-  port = process.env.API_APP_ENV || 8888;
-  
-const apiRoute = require('./app/controllers/api'),
-  middlewares = require('./app/middleware/common-middleware');
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = process.env.PORT || 8888;
+
+const apiRoute = require('./app/controllers/api');
+const middlewares = require('./app/middleware/common-middleware');
 
 app.use(bodyParser.json());
 app.use(middlewares.setDefaultHeaders);
 
 app.get('/', (req, res) => {
-  res.send('This is the node api app !');
+  res.send('This is the node API app!');
 });
 
-// set common response headers for all incoming requests
 app.use('/api', apiRoute);
 
 if (!module.parent) {
-  app.listen(port, () => console.log('App booted'));
+  app.listen(port, () => console.log(`App booted on port ${port}`));
 }
 
 module.exports = app;
