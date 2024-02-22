@@ -50,6 +50,8 @@
 
 const scanner = require('sonarqube-scanner');
 
+// ./sonar-scanner.bat -D"sonar.projectKey=Node_demo_sonhrqube" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_f8adee6fd9dcbe307c46a8b4bb73ec8ad50f8197"
+
 scanner(
   {
     serverUrl: 'http://localhost:9000/tutorials?id=Node_demo_sonhrqube',
