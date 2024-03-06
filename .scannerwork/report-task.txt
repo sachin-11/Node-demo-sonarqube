@@ -2,5 +2,5 @@ projectKey=Node_demo_sonhrqube
 serverUrl=http://localhost:9000
 serverVersion=10.4.0.87286
 dashboardUrl=http://localhost:9000/dashboard?id=Node_demo_sonhrqube
-ceTaskId=a23025a0-bb6b-484b-ad54-331f4942179f
-ceTaskUrl=http://localhost:9000/api/ce/task?id=a23025a0-bb6b-484b-ad54-331f4942179f
+ceTaskId=4dfebed4-b390-4683-ade2-43438b58e393
+ceTaskUrl=http://localhost:9000/api/ce/task?id=4dfebed4-b390-4683-ade2-43438b58e393
